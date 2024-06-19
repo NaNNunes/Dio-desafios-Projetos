@@ -4,20 +4,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projeto tags</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1em;
+            color: black;
+        }
+        h1 {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 2.5em;
+            color: black;
+        }
+        h2 {
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 700;
+        }
+        h3{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1.1em;
+            font-weight: bold;
+        }
+    </style>
 </head>
 <body>
     <h1>Tags aprendidas - Modulo I</h1>
     <hr>
-    <h2>Índice</h2>
+
+    <h2 id="#index">Índice</h2>
     <ul>
         <li>
-            <a href="#Tags">O que são Tags</a>
+            <a href="#tags" target="_self">O que são Tags</a>
         </li>
         <li>
-            <a href="#desuso">Tags obsoletas</a>
+            <a href="#desuso" target="_self">Tags obsoletas</a>
+        </li>
+        <li>
+            <a href="#links" target="_self">Referências</a>
         </li>
     </ul>
-    <h2 id="Tags">O que são tags?</h2>
+
+    <h2 id="tags">O que são tags?</h2>
+    <a href="#index">(voltar)</a>
     <p>
         Elementos HTML, também conhecidos como tags, delimitados por <mark>chevrons</mark> "&lt;" e "&gt;". <br> 
         Determinam ao <abbr title="Navegador" style="text-decoration: none;"><u>browser</u></abbr> a estrutura do arquivo HTML, determinam a formação de links, parágrafos, imagens, listas, assim como as estruturas bases da pagina como <strong>&lt; head &gt;</strong> e <strong>&lt; body &gt;</strong>.   
@@ -51,13 +78,30 @@
                 </p>
             </li>
         </ul>
-        <h2 id="desuso">Tags obsoletas</h2>
-        <p>
-            Elementos obsoletos, são aqueles que podem gerar erros de compatibilidade com os navegadores atuais, trazando uma semântica incorreta, assim sendo evitadas durante o desenvolvimento de uma página.  
-        </p>
+
+    <h2 id="desuso">Tags obsoletas</h2>
+    <a href="#index">(voltar)</a>
+    <p>
+        Elementos obsoletos, são aqueles que podem gerar erros de compatibilidade com os navegadores atuais, trazando uma semântica incorreta, assim sendo evitadas durante o desenvolvimento de uma página.  
+    </p>
         <ul>
             <li>
-                <h3>&lt; font &gt;</h3>
+                <h3>&lt; <del>font</del> &gt;</h3>
+                <p>
+                    Usada no HTML 4 para especificar tamanho, cor do texto e o tipo da fonte. <br>
+                    Orientado usar style como atributo de CSS. <mark>&lt; p style="font-size:20px; color:green; font-family:arial"&gt; texto.&lt; /p &gt;</mark>, ou, em &lt; head &gt;, usar a tag <u>&lt; style &gt;</u> para estizar o arquivo HTML usando CSS.
+                </p>
+            </li>
+        </ul>
+
+    <h2 id="links">Referências</h2>
+    <a href="#index">(voltar)</a>
+        <ul>
+            <li>
+                <a href="https://www.w3schools.com/tags/default.asp" target="_blank">w3schools.com</a>
+            </li>
+            <li>
+                <a href="https://web.dio.me/course/introducao-ao-html-na-pratica/learning/a6c501f1-c8f1-41b0-ac09-9f30e79fcd01?back=/track/primeiros-passos-em-tecnologia&tab=undefined&moduleId=undefined"><abbr title="Introdução ao HTML na Prática" target="blank">web.dio.me</abbr></a>
             </li>
         </ul>
 </body>
