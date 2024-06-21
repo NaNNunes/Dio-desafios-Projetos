@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .row {
+            padding-right: 5px;
+        }
+        label {
+            width: 100px;
+            text-align: right;
+            text-shadow: 2px 3px 4px rgba(0, 0, 0, 0.281);
+            display: inline-block;
+            padding: 3px;
+        }
+        button {
+            margin: 1px 2px;
+        }
+        fieldset {
+            background-color: whitesmoke;
+            margin-bottom: 10px;
+            border-radius: 7px;
+            box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.171);
+        }
+        legend {
+            color: green;
+            text-shadow: 1px 2px 3px rgba(0, 0, 0, 0.329);
+        }
+
+
+    </style>
+</head>
+<body>
+    <form action="#">
+        <fieldset>
+            <legend>Dados de Cadastro</legend>
+            <div class="row">
+                <label for="">Nome:</label><input type="text">
+                <label for="">Email:</label><input type="email" name="" id="">
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Endereço</legend>
+            <div class="row">
+                <label for="">Endereço:</label><input type="text" name="" id="">
+                <label for="">Número:</label><input type="number" name="" id="" style="width: 40px;"><br>
+                <label for="">Bairro:</label><input type="text" name="" id=""><br>
+                <label for="">Cidade/UF</label><input type="text" name="" id="">
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Informações de Contato</legend>
+            <div class="row">
+                <label for="">Celular:</label><input type="text" name="" id="">
+                <label for="">Whatsapp:</label><input type="tel" name="" id=""><br>
+                <label for="">Linkedin:</label><input type="url" name="" id="">
+                <label for="">GitHub:</label><input type="url" name="" id="">
+            </div>
+        </fieldset>
+        
+            <button type="submit">Enviar</button>
+            <button type="reset">Reset</button>
+    </form>
+</body>
+</html>
