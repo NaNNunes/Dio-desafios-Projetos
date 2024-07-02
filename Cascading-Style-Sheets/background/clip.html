@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 300px; height: 100px; 
+            margin: 10px; padding: 10px;
+            background-color: rebeccapurple;
+            color: white;
+            font-size:2em; font-weight: bold; 
+            border: 10px dashed rgba(0, 128, 0, 0.6);
+        }
+
+        #box1 {background-clip: padding-box;}
+        #box2 {background-clip: border-box;}
+        #box3 {background-clip: content-box}
+        #box4 {
+            color: transparent;
+            background-clip: text;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box" id="box1"><code>background-clip: paddding-box;</code></div>
+    <div class="box" id="box2"><code>background-clip: border-box;</code></div><!--Padrão-->
+    <div class="box" id="box3"><code>background-clip: content-box;</code></div>
+    <div class="box" id="box4"><code>background-clip: content-text;</code></div>
+</body>
+</html>

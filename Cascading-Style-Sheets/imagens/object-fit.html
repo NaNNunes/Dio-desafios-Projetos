@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{font:normal 1em arial;}
+        code{font-size: 2em;}
+        li{margin: 5px;}
+        div{width: 200px; height: 300px; border: 3px dashed black; margin-left: 25px; margin-bottom: 20px;}
+        img{width: 100%; height: 100%;}
+        
+        #fill{object-fit: fill;}
+        #contain{object-fit: contain;}
+        #cover{object-fit: cover;}
+        #none{object-fit: none;}
+        #scaleDown{object-fit: scale-down;}
+    </style>
+</head>
+<body>
+    <h1>Object-fit</h1>
+    <code>Object-fit: fill;</code> (padrão)
+    <li>Objeto filho é distorcido para se enquadrar dentro do objeto pai.</li>
+    <div>
+        <img src="https://www.kingstonstore.com.br/cdn/shop/products/SODIMMDDR4FBK12_800x.jpg?v=1627065430" alt="" id="fill">
+    </div>
+
+    <code>Object-fit: contain;</code>
+    <li>Objeto filho é redimendionado para o tamanho do objeto pai, preservando sua proporção original. </li>
+    <div>
+        <img src="https://www.kingstonstore.com.br/cdn/shop/products/SODIMMDDR4FBK12_800x.jpg?v=1627065430" alt="" id="contain">
+    </div>
+
+    <code>Object-fit: cover;</code>
+    <li>Objeto filho preenche todo o objeto pai, preservado sua proporção, eliminando os excedentes</li>
+    <div>
+        <img src="https://www.kingstonstore.com.br/cdn/shop/products/SODIMMDDR4FBK12_800x.jpg?v=1627065430" alt="" id="cover">
+    </div>
+
+    <code>Object-fit: none;</code>
+    <li>Objeto filho ignora as dimensões do objeto pai, cobrindo-o totalmente com sua proporção de origem</li>
+    <div>
+        <img src="https://www.kingstonstore.com.br/cdn/shop/products/SODIMMDDR4FBK12_800x.jpg?v=1627065430" alt="" id="none">
+    </div>
+
+    <code>Object-fit: scale-down;</code>
+    <li>Objeto filho com configurações de object-fit com valor contain ou none, o parâmetro é o valor que não distorcerá o objeto filho </li>
+    <div>
+        <img src="https://www.kingstonstore.com.br/cdn/shop/products/SODIMMDDR4FBK12_800x.jpg?v=1627065430" alt="" id="scaleDown">
+    </div>
+</body>
+</html>

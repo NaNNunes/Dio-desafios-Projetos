@@ -25,23 +25,44 @@ body {
 }
 .header {
     background-color: rgba(0, 0, 0, 0.26);
-    background-image: url(imagens/ItRadi.png);
+    background-image: url(imagens/header_indice.png);
     min-height: 200px;
 }
 .content {
-    background-color: rgb(177, 177, 177);
+    background-image: linear-gradient(to bottom,#0B463C 30%, #099D7F);
     min-height: 300px;
     padding: 20px;
 }
-.content > p{
-    padding: 10px;
-    border-radius: 5px;
-    box-shadow: 3px 4px 5px rgba(0, 0, 0, 0.301);
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: white;
+#conteudo {
+    background-color: rgb(196, 189, 189);
+    border-radius: 4px;
+    padding: 5px;
+    min-height: 500px;
+    box-shadow: 2px 3px black;
 }
+
+.p1 {
+    display: flex;
+}
+
+.p1> p {
+    background-color: white;
+    padding: 5px;
+    margin: 0px 15px 10px 5px;
+    width: 500px;
+    line-height: 1.3em;
+    font-size: 1.4em;
+    text-align: justify;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 .footer {
-    background-color: rgb(0,0,0);
+    background-color: #099C7E;
     color: white;
     min-height: 50px;
+    display: flex;
+}
+.footer > p{
+    padding: 15px;
+    display: inline;
 }

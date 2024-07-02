@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font: normal 1em arial;
+        }
+            .cores {
+                display: flex;
+                width: 300px;
+                height: 100px;
+                margin: 10px;
+                border: .3px solid black;
+                border-radius: 10px;
+            }
+                .sonCores {
+                    width: 100px;
+                    height: 80px;
+                    margin: 5px;
+                    padding: 5px;
+                    border-radius: 5px;
+                    color: white;
+                    line-height: 80px;
+                    font-size: 15px;
+                    text-align: center;
+                }
+                    [id*='pd']{
+                        border: 0px solid transparent;
+                    }
+                        #pd1{
+                            background-color: aquamarine;
+                            color: black;
+                        }
+                        #pd2 {
+                            background-color: chartreuse;
+                            color: black;
+                        }
+                        #pd3 {
+                            background-color: brown;
+                        }
+
+                    [id*='kw']{
+                        height: 75px;
+                        margin-top: 6px;
+                        border: 2px dashed currentColor;
+                    }
+                        #kw1 {
+                            color: red;
+                        }
+                        #kw2 {
+                            color: green
+                        }
+                        #kw3 {
+                            color: blue
+                        }
+
+                    [id*='rgb'] {border: none;}
+                        #rgb1 {
+                            background-color: rgb(0%, 0%, 0%);
+                        }
+                        #rgb2 {
+                            background-color: rgb(255, 255, 0);
+                            color: black;
+                        }
+                        #rgb3 {
+                            background-color: rgb(255, 0, 255);
+                    }
+
+                    #rgba1 {
+                        background-color: rgba(100%, 50%, 0%, .3);
+                        color: black;
+                    }
+                    #rgba2 {
+                        background-color: rgba(255, 130, 0, 60%);
+                    }
+                    #rgba3 {
+                        background-color: rgba(255, 130, 0, 1.0);
+                    }
+
+                    #hex1 {
+                        background-color: #ff0000;
+                    }
+                    #hex2 {
+                        background-color: #00ff00;
+                        color: black;
+                    } 
+                    #hex3 {
+                        background-color: #0000ff;
+                    }
+
+                    #hexA1 {
+                        background-color: #ff005d80;
+                    }
+                    #hexA2 {
+                        background-color: #ff005dcc;
+                    }
+                    #hexA3 {
+                        background-color: #ff005d;
+                    }
+
+                    #hsl1 {
+                        background-color: hsl(120, 30%, 50%);
+                    }
+                    #hsl2 {
+                        background-color: hsl(120, 50%, 50%);
+                    }
+                    #hsl3 {
+                        background-color: hsl(120, 100%, 70%);
+                    }
+
+                    #hsla1{
+                        background-color: hsla(300, 100%, 50%, .2);
+                    }
+                    #hsla2 {
+                        background-color: hsla(300, 70%, 50%, .5);
+                    }
+                    #hsla3 {
+                        background-color: hsla(300, 50%, 70%, 1.0);
+                    }
+    </style>
+</head>
+<body>
+    <div id="pai">
+        <h1>Cores</h1>
+        <ul>
+            <li>
+                <h3>Pré-definidas</h3>
+                <div class="cores">
+                    <div id="pd1" class="sonCores">Aquamarine</div>
+                    <div id="pd2" class="sonCores">Chartreuse</div>
+                    <div id="pd3" class="sonCores">Brown</div>
+                </div>
+            </li>
+            <li>
+                <h3>Key-Word CurrentColor</h3>
+                <div class="cores">
+                    <div id="kw1" class="sonCores">Red</div>
+                    <div id="kw2" class="sonCores">Green</div>
+                    <div id="kw3" class="sonCores">Blue</div>
+                </div>
+            </li>
+            <li>
+                <h3>Red, Green, Blue</h3>
+                <div class="cores">
+                    <div id="rgb1" class="sonCores">0, 0, 0</div>
+                    <div id="rgb2" class="sonCores">255, 255, 0</div>
+                    <div id="rgb3" class="sonCores">255, 0, 255</div>
+                </div>
+            </li>
+            <li>
+                <h3>RGB alpha</h3>
+                <div class="cores">
+                    <div id="rgba1" class="sonCores">30%</div>
+                    <div id="rgba2" class="sonCores">60%</div>
+                    <div id="rgba3" class="sonCores">100%</div>
+                </div>
+            </li>
+            <li>
+                <h3>Hexadecimal</h3>
+                <div class="cores">
+                    <div id="hex1" class="sonCores">#ff0000</div>
+                    <div id="hex2" class="sonCores">#00ff00</div>
+                    <div id="hex3" class="sonCores">#0000ff</div>
+                </div>
+            </li>
+            <li>
+                <h3>Hexadecimal Alpha</h3>
+                <div class="cores">
+                    <div id="hexA1" class="sonCores">#ff005d80</div>
+                    <div id="hexA2" class="sonCores">#ff005dcc</div>
+                    <div id="hexA3" class="sonCores">#ff005d</div>
+                </div>
+            </li>
+            <li>
+                <h3>HSL - Hue Saturation Lightness</h3>
+                <div class="cores">
+                    <div id="hsl1" class="sonCores"></div>
+                    <div id="hsl2" class="sonCores"></div>
+                    <div id="hsl3" class="sonCores"></div>
+                </div>
+            </li>
+            <li>
+                <h3>HSL Alpha</h3>
+                <div class="cores">
+                    <div id="hsla1" class="sonCores"></div>
+                    <div id="hsla2" class="sonCores"></div>
+                    <div id="hsla3" class="sonCores"></div>
+                </div>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>
