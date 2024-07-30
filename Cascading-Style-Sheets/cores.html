@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font: normal 1em arial;
+        }
+        .cores {
+            display: flex;
+            width: 300px;
+            height: 100px;
+            margin: 10px;
+            border: .3px solid black;
+            border-radius: 10px;
+        }
+        .sonCores {
+            width: 100px;
+            height: 80px;
+            margin: 5px;
+            padding: 5px;
+            border: 1px dashed black;
+            border-radius: 5px;
+            color: white;
+            line-height: 80px;
+            font-size: 15px;
+            text-align: center;
+        }
+        [id*='pd']{
+            border: 0px solid transparent;
+        }
+        #pd1{
+            background-color: aquamarine;
+            color: black;
+        }
+        #pd2 {
+            background-color: chartreuse;
+            color: black;
+        }
+        #pd3 {
+            background-color: brown;
+        }
+        [id*='kw']{
+            height: 75px;
+            border: 2px dashed currentColor;
+        }
+        #kw1 {
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div id="pai">
+        <h1>Cores</h1>
+        <ul>
+            <li>
+                <h3>Pré-definidas</h3>
+                <div class="cores">
+                    <div id="pd1" class="sonCores">Aquamarine</div>
+                    <div id="pd2" class="sonCores">Chartreuse</div>
+                    <div id="pd3" class="sonCores">Brown</div>
+                </div>
+            </li>
+            <li>
+                <h3>Key-Word CurrentColor</h3>
+                <div class="cores">
+                    <div id="kw1" class="sonCores"></div>
+                    <div id="kw2" class="sonCores"></div>
+                    <div id="kw3" class="sonCores"></div>
+                </div>
+            </li>
+            <li>
+                <h3></h3>
+                <div class="cores">
+                    <div class="sonCores"></div>
+                    <div class="sonCores"></div>
+                    <div class="sonCores"></div>
+                </div>
+            </li>
+            <li>
+                <h3></h3>
+                <div class="cores">
+                    <div class="sonCores"></div>
+                    <div class="sonCores"></div>
+                    <div class="sonCores"></div>
+                </div>
+            </li>
+            <li>
+                <h3></h3>
+                <div class="cores">
+                    <div class="sonCores"></div>
+                    <div class="sonCores"></div>
+                    <div class="sonCores"></div>
+                </div>
+            </li>
+            <li>
+                <h3></h3>
+                <div class="cores">
+                    <div class="sonCores"></div>
+                    <div class="sonCores"></div>
+                    <div class="sonCores"></div>
+                </div>
+            </li>
+            <li>
+                <h3></h3>
+                <div class="cores">
+                    <div class="sonCores"></div>
+                    <div class="sonCores"></div>
+                    <div class="sonCores"></div>
+                </div>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>

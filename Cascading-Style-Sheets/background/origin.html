@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .div {
+            width: 200px; height: 200px;
+            padding: 10px; margin: 10px;
+            background-repeat: no-repeat;
+            border: 10px dashed green;
+            background-image: url(https://images.pexels.com/photos/13146882/pexels-photo-13146882.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+            background-size: contain;
+        }
+            #padding-box{ background-origin: padding-box; }
+            #border-box{ background-origin: border-box; }
+            #content-box{ background-origin: content-box; }
+    </style>
+</head>
+<body>
+    <h1>Background-Origin</h1>
+    <li><code>Background-origin: padding-box;</code> (padrao)</li>
+    <div class="div" id="padding-box"></div>
+    <li><code>Background-origin: border-box;</code></li>
+    <div class="div" id="border-box"></div>
+    <li><code>Background-origin: content-box;</code></li>
+    <div class="div" id="content-box"></div>
+</body>
+</html>

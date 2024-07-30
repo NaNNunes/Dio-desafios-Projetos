@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h2 {font: bold 1.5em monospace;}
+        p {width: 200px; background-color: gray;}
+        span { background-color: yellow;}
+        #normal {white-space: normal;}
+        #nowrap {white-space: nowrap;}
+        #pre {white-space: pre;}
+        #pre-line {white-space: pre-line;}
+        #pre-wrap {white-space: pre-wrap;}
+        #break-spaces {white-space: break-spaces;}
+    </style>
+</head>
+<body>
+    <section>
+        <h2>white-space: normal;</h2>
+        <p id="normal">
+            <span>
+                Lorem ipsumdolor sit amet consectetur adipisicing elit. Eveniet explicabo eligendi aliquid dicta blanditiis deleniti nisi laudantium ipsam velit! Quas ipsam sed neque delectus enim exercitationem natus quae facere ullam.
+            </span>
+        </p>
+    </section>
+    <section>
+        <h2>white-space: nowrap;</h2>
+        <p id="nowrap">
+            <span>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet explicabo eligendi aliquid dicta blanditiis deleniti nisi laudantium ipsam velit! Quas ipsam sed neque delectus enim exercitationem natus quae facere ullam.
+            </span>
+        </p>
+    </section>
+    <section>
+        <h2>white-space: pre;</h2>
+        <p id="pre">
+            <span>
+                Lorem ipsum            dolor sit amet consectetur adipisicing elit. 
+                Eveniet explicabo eligendi aliquid dicta blanditiis deleniti nisi laudantium ipsam velit! 
+                
+                Quas ipsam sed neque delectus enim exercitationem natus quae facere ullam.
+            </span>
+        </p>
+    </section>
+    <section>
+        <h2>white-space: pre-line;</h2>
+        <p id="pre-line">
+            <span>
+                Lorem ipsum dolor sit               met consectetur adipisicing elit. 
+                Eveniet explicabo eligendi aliquid dicta blanditiis deleniti nisi laudantium ipsam velit! 
+                
+                Quas ipsam sed neque delectus enim exercitationem natus quae facere ullam.
+            </span>
+        </p>
+    </section>
+    <section>
+        <h2>white-space: pre-wrap;</h2>
+        <p id="pre-wrap">
+            <span>
+                Lorem ipsum dolor sit amet                                     consectetur adipisicing elit.
+                 
+                Eveniet explicabo eligendi   aliquid dicta blanditiis deleniti nisi laudantium ipsam velit! 
+                 
+                 Quas ipsam sed neque delectus enim exercitationem natus quae facere ullam.
+            </span>
+        </p>
+    </section>
+    <section>
+        <h2>white-space: break-spaces;</h2>
+        <p id="break-spaces">
+            <span>
+                Lorem ipsum             dolor sit amet consectetur adipisicing elit.
+                 Eveniet explicabo eligendi aliquid      dicta blanditiis deleniti nisi laudantium ipsam velit!
+                 
+                 Quas ipsam sed neque delectus 
+                 enim exercitationem natus quae facere ullam.
+            </span>
+        </p>
+    </section>
+</body>
+</html>

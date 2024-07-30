@@ -1,0 +1,70 @@
+* {margin: 0; font-family: Arial, Helvetica, sans-serif;}
+body {
+    background-color:  rgb(51, 113, 125); 
+    display: flex; flex-flow: column;
+}
+header{
+    padding: 1rem; 
+    margin: 10px; 
+    color: antiquewhite;
+    text-align: center;
+    text-shadow: 2px 3px 4px black;
+}
+section{
+    margin: auto auto 8px; padding: 1rem;
+    width: 50vw; min-height: 100px;
+    border-radius: 13px; border: 2px solid olivedrab;
+    box-shadow: 2px 3px 4px rgba(0,0,0, .7);
+    background-color: white;
+    text-align: center; 
+}
+div {display: flex; margin-top: 10px;}
+#input > p{
+    margin: 1px; padding: 10px 0px;
+    width: 50%;
+    background-color: rgba(173, 216, 230, 0.347);
+    border-radius: 10px 10px 0px 0px;
+    text-align: center;
+}
+#txtpeso{width: 3.5rem;}
+#txtaltura{width: 3.15rem;}
+button {
+    padding: 5px; margin: 5px auto;
+    width: 100%; height: 40px;
+    border-radius: 0px 0px 20px 20px;
+    border: 3px solid rgba(0, 0, 0, 0.797);
+    font: 700 1.5rem arial;
+    text-transform: uppercase;
+    letter-spacing: .3vw;
+}
+button:hover {
+    border-color: black;
+    box-shadow: inset 0px 0px 5px rgba(0, 0, 0, 0.244) ;
+    cursor: pointer;
+}
+#saida {
+    min-height: 15vh;
+}
+#resultado{font-size: 1.3rem; margin: 5px;}
+#output > div { 
+    margin: 10px;
+    width: 20%; height: 80px; 
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+#baixo{background-color: hsl(200, 20%, 50%);}
+#normal{background-color: hsl(80, 20%, 50%);}
+#sobrepeso{background-color: hsl(60, 20%, 50%);}
+#obesidade{background-color: hsl(30, 20%, 50%);}
+#morbido{background-color: hsl(0, 20%, 50%);}
+footer {
+    margin-top: 1rem;
+    color: wheat;
+    font: bold italic 1.5rem arial;
+    text-align: center;
+    text-shadow: 1px 2px 1px rgb(0,0,0, .5);
+}
+a {
+    color: white;
+    text-decoration: none;
+}
